@@ -11,6 +11,8 @@
 
 #### ✍️ How to Create And Use Unit Tests in JUnit :  **([👉Click Here](https://youtu.be/vZm0lHciFsQ?si=YN50wEfrrpJrzAo7))**
 
+#### ✍️ A Complete Playlist if you want to learn more JUnit :  **([👉Click Here](https://youtube.com/playlist?list=PLt4nG7RVVk1iGkgOCXmG8Cs8Pjw1Hj6Y6&si=4bWOz2CUJccUaAW9))**
+
 <hr>
 
 *------ **🎥 Video Resources : Careful Do Steps of Installing Junit 🎥** ------*
@@ -78,6 +80,8 @@
 ## 🌲 Step - 1 : Install Selenium Web Driver
 
 #### ✍️ Follow Every Video Instruction :  **([👉Click Here](https://youtu.be/dbzc9UbFZt8?si=pMu5CqxxiZfIcuvv))**
+
+#### ✍️ Selenium Documentation :  **([👉Click Here](./Selenium Driver/Selenium Concepts.pdf))**
 
 <hr>
 
