@@ -81,7 +81,7 @@
 
 #### ✍️ Follow Every Video Instruction :  **([👉Click Here](https://youtu.be/dbzc9UbFZt8?si=pMu5CqxxiZfIcuvv))**
 
-#### ✍️ Selenium Documentation :  **([👉Click Here](./Selenium Driver/Selenium Concepts.pdf))**
+#### ✍️ Selenium Documentation :  **([👉Click Here](https://github.com/Sumonta056/UI-and-Unit-Testing-in-Java/blob/main/Selenium%20Driver/Selenium%20Concepts.pdf))**
 
 <hr>
 
