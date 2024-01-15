@@ -8,7 +8,7 @@ public class Calculator {
     }
 
     public static int productTwoNumbers(int a , int b){
-        return a+b;
+        return a*b;
     }
 }
 

@@ -31,3 +31,37 @@
 
 </div>
 
+<div align = "center">
+
+*------ **🧠 Java UI Testing : Selenium Web Driver 🧠** ------*
+
+## 🌲 Step - 1 : Install Selenium Web Driver
+
+#### ✍️ Follow Every Video Instruction :  **([👉Click Here](https://youtu.be/dbzc9UbFZt8?si=pMu5CqxxiZfIcuvv))**
+
+<hr>
+
+*------ **🎥 Video Resources : Careful Do Steps of Installing Selenium Web Driver 🎥** ------*
+
+##### ✍️ Selenium Web Driver Download Link :  **([👉Click Here](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/4.16.1))**
+##### ✍️ Edge Web Driver :  **([👉Click Here](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH#downloads))**
+
+
+```agsl
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.16.1</version>
+</dependency>
+
+```
+
+
+
+##### ✍️ Must Refresh The Maven after Changing New Dependency
+
+
+<hr>
+
+</div>
