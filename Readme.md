@@ -1,6 +1,6 @@
 <div align = "center">
 
-# 🧐 Check Projects Code : Detail UnderStanding of Testing 🧐
+# 🧐 Checkout Project Code 🧐
 
 *------ **🧠 Java Unit Testing : JUnit  🧠** ------*
 
