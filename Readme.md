@@ -1,10 +1,13 @@
 <div align = "center">
 
-*------ **🧠 Java Unit Testing : JUnit and Mockito 🧠** ------*
+*------ **🧠 Java Unit Testing : JUnit  🧠** ------*
 
 ## 🌲 Step - 1 : Install JUnit Testing
 
 #### ✍️ Follow Every Video Instruction :  **([👉Click Here](https://youtu.be/sq_pYMepfP0?si=ZNP9loi9CNaiAtvO))**
+
+
+#### ✍️ How to Create And Use Unit Tests in JUnit :  **([👉Click Here](https://youtu.be/vZm0lHciFsQ?si=YN50wEfrrpJrzAo7))**
 
 <hr>
 
@@ -26,6 +29,41 @@
 ##### ✍️ Must Refresh The Maven after Changing New Dependency
 
 ![](./assets/mavenRefresh.png)
+
+<hr>
+
+</div>
+
+
+<div align = "center">
+
+*------ **🧠 Java Unit Testing : Mockito   🧠** ------*
+
+## 🌲 Step - 1 : Install Mockito Testing
+
+#### ✍️ Follow Every Video Instruction :  **([👉Click Here](https://youtu.be/aNCPy803rkI?si=vrzZ2F7CjKypoJZ4))**
+
+
+#### ✍️ Project Code of Video :  **([👉Click Here](https://github.com/TshRahul/mockito-intro/blob/master/src/main/java/Student.java))**
+
+<hr>
+
+*------ **🎥 Video Resources : Careful Do Steps of Installing Mockito 🎥** ------*
+
+##### ✍️ Mockito Download Link :  **([👉Click Here](https://mvnrepository.com/artifact/org.mockito/mockito-core/5.6.0))**
+
+```agsl
+ <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>3.5.2</version>
+      <scope>test</scope>
+    </dependency>
+```
+
+
+
+##### ✍️ Must Refresh The Maven after Changing New Dependency
 
 <hr>
 
