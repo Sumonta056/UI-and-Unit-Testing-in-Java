@@ -5,13 +5,16 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.Mockito;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class MockingTest {
 
     Mocking mocking;
+
+
 
     @BeforeEach
     public void setup() {
@@ -28,6 +31,9 @@ public class MockingTest {
         when(user.getUsername()).thenReturn("Sumonta");
         Assertions.assertEquals(1, mocking.assignPermission());
 
+
+
     }
+
 
 }

@@ -1,4 +1,6 @@
 package orgUnitTesting.MockingUser;
+import java.util.ArrayList;
+import java.util.List;
 
 public class User {
     private String id;
@@ -11,9 +13,11 @@ public class User {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getRole() {
+        return role;
     }
+
+    private List<String> posts;
 
     public String getUsername() {
         return username;
@@ -23,20 +27,26 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
     public void setPassword(String password) {
         this.password = password;
     }
 
-    public String getRole() {
-        return role;
+    public List<String> getPosts() {
+        return posts;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void initializePosts() { posts = new ArrayList<>(); }
+
+    public void addPost(String post) {
+        posts.add(post);
     }
 
+    public List<String> getAllPostsContainingWord(String word) {
+        List<String> filteredPosts = new ArrayList<>();
+        for(String post: posts) {
+            if(post.contains(word))
+                filteredPosts.add(post);
+        }
+        return filteredPosts;
+    }
 }
