@@ -1,23 +1,21 @@
 package orgUnitTesting.services;
 
-import junit.framework.Assert;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+
+
+import org.junit.jupiter.api.*;
 
 import java.util.Date;
 
 
 public class CalculatorTest {
 
-    @BeforeClass
+    @BeforeAll
     public static void init(){
         System.out.println("Run Before : All Test Cases");
         System.out.println("Started Test : " + new Date());
     }
 
-    @Before
+    @BeforeEach
     public void beforeEach(){
         System.out.println("Executes Methods before Running Each Test Cases");
     }
@@ -29,7 +27,7 @@ public class CalculatorTest {
         int predictedResult = Calculator.addTwoNumbers(4,4);
         int actualResult = 8;
 
-        Assert.assertEquals(actualResult,predictedResult);
+        Assertions.assertEquals(actualResult,predictedResult);
 
     }
 
@@ -40,12 +38,22 @@ public class CalculatorTest {
         int predictedResult = Calculator.productTwoNumbers(2,8);
         int actualResult = 16;
 
-        Assert.assertEquals(actualResult,predictedResult);
+        Assertions.assertEquals(actualResult,predictedResult);
 
     }
 
+    @Test
+    public void compareTest(){
+        System.out.println("Test Case Running: Compare()");
 
-    @AfterClass
+        String predictedResult = Calculator.compare(3,3);
+        String actualResult = "Number1 == Number2";
+
+        Assertions.assertEquals(actualResult,predictedResult);
+    }
+
+
+    @AfterAll
     public static void CleanUP(){
         System.out.println("Cleaning All Test Cases");
         System.out.println("Stopped Test : " + new Date());

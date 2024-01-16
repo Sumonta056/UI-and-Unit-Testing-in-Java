@@ -1,7 +1,9 @@
 package orgUnitTesting.Mocking;
 
-import org.junit.Assert;
-import org.junit.Test;
+;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 public class StudentTest {
@@ -11,11 +13,12 @@ public class StudentTest {
     Student student = new Student(studentService);
 
 @Test
+@DisplayName("Testing Average of Students")
 public void testAverage(){
         Mockito.when(studentService.getTotalMarks()).thenReturn(500);
         Mockito.when((studentService.getTotalStudents())).thenReturn(10);
 
-        Assert.assertEquals(50,student.getAverageMarks());
+        Assertions.assertEquals(50,student.getAverageMarks());
     }
 
 }
