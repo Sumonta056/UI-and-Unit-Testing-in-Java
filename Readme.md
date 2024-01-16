@@ -19,7 +19,7 @@
 
 ##### ✍️ JUnit 4 Download Link :  **([👉Click Here](https://mvnrepository.com/artifact/junit/junit/4.12))**
 
-```agsl
+```code
 <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
@@ -30,7 +30,7 @@
 
 ##### ✍️ JUnit 5 Download Link :  **([👉Click Here](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api/5.10.0))**
 
-```agsl
+```code
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
@@ -80,7 +80,7 @@
 
 ##### ✍️ Mockito Download Link :  **([👉Click Here](https://mvnrepository.com/artifact/org.mockito/mockito-core/5.6.0))**
 
-```agsl
+```code
  <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
@@ -131,14 +131,12 @@
 ##### ✍️ Edge Web Driver :  **([👉Click Here](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH#downloads))**
 
 
-```agsl
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+```code
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.16.1</version>
 </dependency>
-
 ```
 
 
