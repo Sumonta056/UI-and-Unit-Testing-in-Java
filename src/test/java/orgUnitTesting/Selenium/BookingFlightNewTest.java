@@ -33,7 +33,7 @@ public class BookingFlightNewTest {
     }
 
     @Test
-    public void selectDepartureCityTest() throws InterruptedException {
+    public void selectDepartureCityTest1() throws InterruptedException {
 
         bookingFlight.selectDepartureCity(webDriver,"Chennai (MAA)");
 
@@ -47,26 +47,22 @@ public class BookingFlightNewTest {
         Thread.sleep(2000);
     }
 
-//    @Test
-//    public void selectArrivalCityTest() throws InterruptedException{
-//        bookingFlight.selectArrivalCity(webDriver);
-//
-//        Thread.sleep(2000);
-//
-//        WebElement arrivalCityInput = webDriver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1_CTXT"));
-//        String arrivalCityText = arrivalCityInput.getAttribute("value");
-//        System.out.println("Arrival City: " + arrivalCityText);
-//
-//        Thread.sleep(2000);
-//
-//        Assertions.assertEquals(arrivalCityText,"Delhi (DEL)");
-//    }
-//
-//    @Test
-//    public void selectDepartureDateTest() throws InterruptedException{
-//        bookingFlight.selectDepartureDate(webDriver);
-//
-//    }
+    @Test
+    public void selectArrivalCityTest1() throws InterruptedException{
+
+        bookingFlight.selectArrivalCity(webDriver,"Delhi (DEL)");
+
+        Thread.sleep(2000);
+
+        WebElement arrivalCityInput =  webDriver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1_CTXT"));
+        String arrivalCityText = arrivalCityInput.getAttribute("value");
+        System.out.println("Arrival City: " + arrivalCityText);
+
+        Thread.sleep(2000);
+
+        Assertions.assertEquals(arrivalCityText,"Delhi (DEL)");
+    }
+
 
     @AfterAll
     public static void close() throws InterruptedException {
