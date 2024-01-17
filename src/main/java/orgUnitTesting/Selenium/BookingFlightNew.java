@@ -17,11 +17,11 @@ public class BookingFlightNew {
     }
 
     // Select "Delhi(Del)" on Arrival City
-    public void selectArrivalCity(WebDriver webDriver) throws InterruptedException{
+    public void selectArrivalCity(WebDriver webDriver, String City) throws InterruptedException{
         webDriver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1_CTXT")).click();
         Thread.sleep(1500);
 
-        webDriver.findElement(By.linkText("Delhi (DEL)")).click();
+        webDriver.findElement(By.linkText(City)).click();
         Thread.sleep(2000);
     }
 
@@ -61,6 +61,7 @@ public class BookingFlightNew {
         BookingFlightNew bookingFlightNew = new BookingFlightNew();
 
         bookingFlightNew.selectDepartureCity(webDriver,"Chennai (MAA)");
+        bookingFlightNew.selectArrivalCity(webDriver,"Delhi (DEL)");
 
 
     }
