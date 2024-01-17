@@ -35,11 +35,36 @@ public class SwagLab_UI {
         Thread.sleep(2000);
     }
 
+    public void checkOut(WebDriver driver) throws InterruptedException{
+        driver.findElement(By.id("checkout")).click();
+        Thread.sleep(2000);
+    }
+
+    public void fillUpForm(WebDriver driver) throws InterruptedException{
+        driver.findElement(By.id("first-name")).sendKeys("Sumonta");
+        Thread.sleep(1000);
+        driver.findElement(By.id("last-name")).sendKeys("Saha");
+        Thread.sleep(1000);
+        driver.findElement(By.id("postal-code")).sendKeys("1400");
+        Thread.sleep(2000);
+        driver.findElement(By.id("continue")).click();
+        Thread.sleep(2000);
+    }
+
+    public void checkOverview(WebDriver driver) throws InterruptedException{
+        driver.findElement(By.id("finish")).click();
+        Thread.sleep(2000);
+    }
+    public void backHome(WebDriver driver) throws InterruptedException{
+        driver.findElement(By.id("back-to-products")).click();
+        Thread.sleep(2000);
+    }
+
     public void logOut(WebDriver driver) throws InterruptedException{
+        Thread.sleep(1000);
         driver.findElement(By.id("react-burger-menu-btn")).click();
         Thread.sleep(2000);
         driver.findElement(By.id("logout_sidebar_link")).click();
-
     }
 
     public void quit(WebDriver driver) throws InterruptedException{
@@ -53,16 +78,17 @@ public class SwagLab_UI {
         WebDriver driver = new EdgeDriver();
         driver.get("https://www.saucedemo.com/");
 
-
         SwagLab_UI swag = new SwagLab_UI();
         swag.login(driver);
         swag.sort(driver);
         swag.selectProduct(driver);
         swag.openCart(driver);
-
-
-        //swag.logOut(driver);
-        //swag.quit(driver);
+        swag.checkOut(driver);
+        swag.fillUpForm(driver);
+        swag.checkOverview(driver);
+        swag.backHome(driver);
+        swag.logOut(driver);
+        swag.quit(driver);
 
     }
 }
